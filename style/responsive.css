@@ -1,0 +1,12 @@
+@media screen and (max-width: 394px) {
+  .header__right {
+    margin-left: 0 !important;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .progress__box,
+  svg {
+    transform: scale(0.8);
+  }
+}
