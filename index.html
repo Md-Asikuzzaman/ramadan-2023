@@ -6,6 +6,7 @@
     <title>Ramadan - 2023</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="./public/favicon.jpg" type="image/x-icon" />
     <!-- css files -->
     <link
       rel="stylesheet"
@@ -38,11 +39,11 @@
     <header>
       <div class="container">
         <div
-          class="header__box py-2 px-4 d-flex flex-wrap gap-3 justify-content-center align-items-center"
+          class="header__box py-2 px-4 d-flex flex-wrap gap-3 justify-content-between align-items-center"
         >
           <div class="text-center">
             <h4 class="rd__title mb-1">
-              <span class="ramadan__count"></span> রমজান
+              <span class="ramadan__count"></span>ই রমজান
             </h4>
             <p class="rd__day mb-0">
               <span class="bangla__day"></span> -
@@ -50,19 +51,10 @@
             </p>
           </div>
 
-          <div class="d-flex flex-wrap gap-4 align-items-center ms-auto header__right"> 
-            <i class="fa-solid fa-sun"></i>
-
-            <div class="d-flex gap-3">
-              <div class="text-center">
-                <h5 class="mb-1">৪:১২</h5>
-                <p class="rd__sun mb-0">সুর্যোদয়</p>
-              </div>
-
-              <div class="text-center">
-                <h5 class="mb-1">৪:১২</h5>
-                <p class="rd__sun mb-0">সুর্যাস্ত</p>
-              </div>
+          <div class="d-flex flex-wrap align-items-center header__right">
+            <div class="text-center">
+              <h5 class="fw-bolder" id="clock">00:00:00 PM</h5>
+              <h6 class="mb-0">(<span class="ramadan__title"></span>)</h6>
             </div>
           </div>
         </div>
@@ -72,43 +64,36 @@
       <div class="container">
         <div class="row nav__options">
           <div class="col-lg-4 mt-3">
-            <div class="card py-4 text-center">
-              <h4 class="mb-3 fw-bolder" id="clock">00:00:00 PM</h4>
-              <h5><span class="ramadan__count"></span>ই রমজান</h5>
-              <h5 class="mb-0">(<span class="ramadan__title"></span>)</h5>
-            </div>
-          </div>
-          <div class="col-lg-4 mt-3">
             <div class="card py-4 text-center iftar__card">
-              <h2>ইফতার</h2>
+              <h2 class="mb-3">ইফতার</h2>
               <h1 class="mb-0 option__icon">🍹</h1>
             </div>
           </div>
 
           <div class="col-lg-4 mt-3">
             <div class="card py-4 text-center sahori__card">
-              <h2>সেহেরি</h2>
+              <h2 class="mb-3">সেহেরি</h2>
               <h1 class="mb-0 option__icon">🥘</h1>
             </div>
           </div>
 
           <div class="col-lg-4 mt-3">
             <div class="card py-4 text-center">
-              <h2>নামাজের সময়</h2>
+              <h2 class="mb-3">নামাজের সময়</h2>
               <h1 class="mb-0 option__icon">🕒</h1>
             </div>
           </div>
 
           <div class="col-lg-4 mt-3">
             <div class="card py-4 text-center">
-              <h2>দুআ</h2>
+              <h2 class="mb-3">দুআ</h2>
               <h1 class="mb-0 option__icon">🤲</h1>
             </div>
           </div>
 
           <div class="col-lg-4 mt-3">
             <div class="card py-4 text-center">
-              <h2>বিবিধ</h2>
+              <h2 class="mb-3">বিবিধ</h2>
               <h1 class="mb-0 option__icon">📗</h1>
             </div>
           </div>

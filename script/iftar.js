@@ -109,11 +109,13 @@ const iftarProgress = () => {
       const end = new Date(`${ramadanDate} ${currentMonth}, 2023 ${iftarTime}`);
 
       const today = new Date();
-      var percentage = ((today - start) * 100) / (end - start);
+      var percentage = 100 - ((today - start) * 100) / (end - start);
 
       const radius = progress.r.baseVal.value;
       const circleRef = Math.PI * (radius * 2);
-      const point = Math.floor(circleRef - (percentage / 100) * circleRef);
+      const point = Math.floor(
+        circleRef - (percentage.toFixed(3) / 100) * circleRef
+      );
 
       progress.style.strokeDashoffset = point;
       progress.style.stroke = '#1dc01d';

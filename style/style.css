@@ -10,12 +10,13 @@ body {
   color: #fff;
   padding: 20px;
   font-family: 'SolaimanLipi', arial !important;
-  background: linear-gradient(rgba(16, 64, 0, 0.9), rgba(1, 83, 28, 0.9)),
-    url('./../public/pattern.jpg');
-  background-repeat: repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('./../public/ramadan.jpg');
+  background-repeat: no-repeat;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background-size: cover;
 }
 
 /** custom design **/
@@ -32,7 +33,7 @@ header .header__box {
   background-repeat: repeat;
   width: 100%;
   min-height: 80px;
-  border-radius: 0.2rem;
+  border-radius: 0.3rem;
   color: #fff;
 }
 
@@ -57,12 +58,13 @@ header .rd__sun {
 /** main box **/
 
 .main__box .card {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(30, 41, 59, 0.3);
   backdrop-filter: blur(10px);
   cursor: pointer;
   min-height: 7rem !important;
   height: 100%;
   border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 0.5rem;
 }
 
 .option__icon {
@@ -91,9 +93,6 @@ footer {
 
 /* window design */
 
-.sahori__window {
-}
-
 .details__window .card {
   background-color: rgba(255, 241, 180, 0.9);
   backdrop-filter: blur(10px);
@@ -111,7 +110,7 @@ footer {
 .progress {
   fill: none;
   stroke: #b8bc82;
-  stroke-width: 12px;
+  stroke-width: 18px;
   stroke-dasharray: 630;
 }
 
