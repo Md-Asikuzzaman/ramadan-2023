@@ -88,13 +88,13 @@ footer {
 }
 
 .dev__text {
-  color: rgba(255, 255, 255, 0.7);
+  color: #ffffffb3;
 }
 
 /* window design */
 
 .details__window .card {
-  background-color: rgba(255, 241, 180, 0.9);
+  background-color: #fff2af;
   backdrop-filter: blur(10px);
   color: #333;
 }
