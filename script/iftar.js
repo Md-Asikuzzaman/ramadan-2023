@@ -70,7 +70,6 @@ const iftarProgress = () => {
 
   // check the specific time
   const checkTime = (date, month, time) => {
-    console.log('TCL: checkTime -> time', time);
     var dest = new Date(`${date} ${month}, 2023 ${time}`).getTime();
     var now = new Date(`${date} ${month}, 2023 12:00:01 AM`).getTime();
 
@@ -92,7 +91,6 @@ const iftarProgress = () => {
   };
 
   let theTime = checkTime(ramadanDate, currentMonth, sehriLastTime);
-  console.log('TCL: iftarProgress -> theTime', theTime);
 
   if (
     theTime.d_hour !== 0 ||
